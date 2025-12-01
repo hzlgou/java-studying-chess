@@ -52,7 +52,7 @@ public class Gobang {
             if(sc.hasNextInt()){
                 position=sc.nextInt();
             }else{
-                sc.nextInt();
+                sc.next();
                 System.out.println("落子失败，请重新落子");
                 continue ;
             }
