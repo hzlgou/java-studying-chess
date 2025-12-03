@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>五子棋游戏</h1>
+        
+        <div class="game-info">
+            <div class="player-info">
+                <div class="player player-a">
+                    <span class="piece">●</span>
+                    <span>玩家A</span>
+                </div>
+                <div class="player player-b">
+                    <span class="piece">○</span>
+                    <span>玩家B</span>
+                </div>
+            </div>
+            <div class="game-status">
+                <p id="status">游戏开始，玩家A先行</p>
+            </div>
+        </div>
+        
+        <div class="game-board">
+            <div id="chessboard" class="chessboard"></div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="reset-btn" class="btn">重置游戏</button>
+        </div>
+        
+        <div class="game-rules">
+            <h3>游戏规则</h3>
+            <ul>
+                <li>点击棋盘上的交叉点进行落子</li>
+                <li>玩家A使用黑色棋子(●)，玩家B使用白色棋子(○)</li>
+                <li>率先在横、竖或斜方向连成5子者获胜</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
